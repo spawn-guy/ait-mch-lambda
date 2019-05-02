@@ -20,7 +20,7 @@ const mailchimpClient = new Mailchimp(mailChimpKey);
 const CryptoJSMD5 = require('crypto-js/md5');
 
 exports.handler = async function (event, context, callback) {
-    console.log('Received event:', JSON.stringify(event, null, 2));
+    console.log('Received event');
 
     const jsonBody = JSON.parse(event.body);
 
