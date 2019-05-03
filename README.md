@@ -1,10 +1,11 @@
 # ait-mch-lambda
 an AWS Lambda function to Proxy calls to MailChimp APIv3 Subscription without exposing the "all mighty" API-Keys
 
-The function expects `application/json` body payload as you would send it to MailChimp APIv3 directly. 
-Even though the API-Gateway is configured to accept ANY HTTP Methods, it is _easier_ to attach `application/json` body to `POST`, `PUT`, `PATCH` methods 
+The function expects `application/json` `body` payload as you would send it to MailChimp APIv3 directly. 
+Even though the API-Gateway is configured to accept ANY HTTP methods - it is _easier_ to attach `application/json` body to `POST`, `PUT`, `PATCH` methods 
 
-Installation
+
+# Installation
   - Install dependencies with `yarn install`
   - ZIP `index.js`, `node_modules`
   - Deploy AWS Lambda function with "upoad zip"
